@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="description" content="currency converter">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Currency Converter</h1>
+        <form>
+        <div class="amount">
+            <p>Amount</p>
+            <input type="text" value="1" required>
+        </div>
+        <div class="convert-box">
+            <div class="from">
+                <p>From</p>
+                <div class="select-inp">
+                <img src="https://flagcdn.com/48x36/us.png" alt="countries flag">
+                <select></select>
+                </div>
+
+            </div>
+            <div class="reverse"><i class="fas fa-exchange-alt"></i></div>
+            <div class="to">
+                <p>To</p>
+                <div class="select-inp">
+                <img src="https://flagcdn.com/48x36/gb.png" alt="countries flag">
+                <select></select>
+                </div>
+        </div>
+        <div id="result">Get Exchange Rate...</div>
+
+        <button type="submit">Get Exchange Rate</button>
+
+    </form>
+    </div>
+
+    <script src="index.js"></script>
+    <script src="countries.js"></script>
+</body>
+</html>
